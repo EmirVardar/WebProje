@@ -1,83 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
-:root{
-    --main-color:#2C2F33;
-    --white-color: #f8f8ff;
-    --black-color:#121212; 
-    --blue-color:#7289DA;
-    --border: 0.1rem solid rgba(255,255,255,0.4);
+html{
+    scroll-behavior: smooth;
+    background-color: #122e44;
+    
 }
 *{
-    font-family: "Poppins", sans-serif;
-    margin:0;
-    padding:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    outline: none;
-    border: none;
+    list-style: none;
     text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.02 ease;
-}
-
-/*! base html code 1 rem 10 piksel yapmak için ayar çekiyoz*/
-
-html{
-    font-size: 62.5%;
-    overflow-x:hidden;/*alttaki kaydırmayı gizlemek için*/
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-    
 }
 body{
-    background-color: var(--main-color);
-    height: 200rem;
+    font-family: "Montserrat" , sans-serif;
 }
-.title{
-    font-size:2rem;
-}
-
-
-
-/*!header başlangıcı*/
-.header .logo img {
-    height: 8rem;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 17px -2px rgba(255, 255, 255, 0.55);
+img{
+    width: 100%;
 }
 
-.header{
-    background-color: #7289DA;
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 0 7%;
-    margin: 2rem 15%;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
-    position :sticky;
-    top:0;
-    z-index: 1000;
-}
+section{
+    padding:100px 0;
+    background: #122e44;
 
-.header .navbar a{
-    margin: 0 1rem;
-    font-size: 1.6rem;
-    color: var(--white-color);
-    border-bottom: 0.1rem solid transparent;
+}.section_title{
+    margin-bottom: 40px;
     
 }
-.header .navbar .active,
-.header .navbar a:hover{
-    border-color: var(--white-color);
-    padding-bottom: 0.5rem;
-
+.section_title  h2{
+    position: relative;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    transition:all .4s ease-in-out;
+}
+.section_title h2:hover{
+    background: #24CAAC;
 }
 
-.header.buttons button{
-    cursor:pointer;
-    font-size: 2.5rem;
-    background-color: var(--blue-color);
+/* ***************header*************** */
+
+header{
+    background: rgb(44,37,37);
+    border-bottom: 2px solid white;
+    position:fixed;
+    width:100%;
+    z-index: 5;
 }
+.navbar{
+    display: flex;/*eklediklerimi yanyana getirir*/
+    justify-content: space-between;/*eklediğim iki bileşen biri sağa diğeri sola gider*/
+    align-items: center;/*yukarıdan aşağıya merkeze çeker*/
+    margin:0 auto;
+    width:80%;/*sağdan soldan ortalamak için*/
+    padding:10px 0;/*yazılarla çizgilerin arasına boşluk açmak için*/
+}
+.nav_links{
+    display:flex;/*eklenenleri yan yana sıralar*/
+    
+}
+.nav_links li a{
+    color:#FFFFFF;
+    margin-left: 15px;/*dış kutu arası boşluk eklemek için*/
+    padding:5px 15px;/*iç kutu büyüklüğü*/
+    border-radius: 5px;
+    transition:all .5s ease-in-out;
+    
+    
+}
+.nav_links li a:hover{
+    background:#24CAAC;
+}
+.logo h2 a{
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* *********anasayfa********* */
+.inner_anasayfa{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:0 auto;
+    width:80%;
+    
+    color:#FFFFFF;
+    
+    
+}
+.child_anasayfa{
+    flex-basis: 45%;
+}
+.child_anasayfa img{
+    border-radius: 5px;
+    border: #FFFFFF solid 2px;
+    
+}
+.child_anasayfa h1{
+    font-size: 50px;
+    color:#24CAAC;
+}
+.span_child{
+    color: #e0376f;
+}
+.child_anasayfa p{
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+.btn{
+    background: #24CAAC;
+    padding: 8px 16px;
+    transition: all .3s ease;
+    border-radius: 20px;
+    border:2px solid #24CAAC;
+    font-weight: 700;
 
+}
+.btn:hover{
+    background: transparent;
+    letter-spacing: 2px;
+}
+.btn a{
+    color: #FFFFFF;
+}
+/* ***************yazılımlar******* */
 
-/* headaer bitişi*/
+.innercv{
+    
+    align-items:center;
+    width: 40%;
+    justify-content: space-between;
+    margin:0 auto;
+    
+    color:#FFFFFF;
+    
+    
+
+    
+}
+.innercv_child{
+    color: #FFFFFF;
+    padding:25px 20px;
+    flex-basis:31% ;
+    background:rgba(55,66,80,0.281) ;
+    border-radius:5px ;
+    margin :10px;
+    border: 1px solid transparent;
+    transition: all .4s ease-in;
+
+}
+.innercv_child:hover{
+    border:1px solid #24CAAC;
+}
+.innercv_child h3{
+    font-size:20px;
+    margin:5px 0;
+
+    
+}
+.innercv_child p{
+    font-size: 15px;
+}
