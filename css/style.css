@@ -4,11 +4,11 @@ html{
     
 }
 *{
-    padding: 0;
+    padding: 0 ;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+    list-style: none !important;
+    text-decoration: none !important;
 }
 body{
     font-family: "Montserrat" , sans-serif;
@@ -47,7 +47,7 @@ header{
 }
 .navbar{
     display: flex;/*eklediklerimi yanyana getirir*/
-    justify-content: space-between;/*eklediğim iki bileşen biri sağa diğeri sola gider*/
+    justify-content: space-between ;/*eklediğim iki bileşen biri sağa diğeri sola gider*/
     align-items: center;/*yukarıdan aşağıya merkeze çeker*/
     margin:0 auto;
     width:80%;/*sağdan soldan ortalamak için*/
@@ -159,3 +159,4 @@ header{
 .innercv_child p{
     font-size: 15px;
 }
+
