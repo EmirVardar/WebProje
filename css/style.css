@@ -193,6 +193,9 @@ header{
 .icerik:hover{
     border:1px solid #24CAAC;
 }
+.icerik img{
+    margin:1rem auto;
+}
 .icerik h4{
     color: #FFFFFF;
 }
