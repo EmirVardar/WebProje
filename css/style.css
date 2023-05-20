@@ -50,13 +50,15 @@ header{
     justify-content: space-between ;/*eklediğim iki bileşen biri sağa diğeri sola gider*/
     align-items: center;/*yukarıdan aşağıya merkeze çeker*/
     margin:0 auto;
-    width:80%;/*sağdan soldan ortalamak için*/
-    padding:10px 0;/*yazılarla çizgilerin arasına boşluk açmak için*/
+    width:100%;/*sağdan soldan ortalamak için*/
+    padding:10px 20px;/*yazılarla çizgilerin arasına boşluk açmak için*/
 }
 .nav_links{
     display:flex;/*eklenenleri yan yana sıralar*/
+
     
 }
+
 .nav_links li a{
     color:#FFFFFF;
     margin-left: 15px;/*dış kutu arası boşluk eklemek için*/
@@ -88,10 +90,12 @@ header{
 }
 .child_anasayfa{
     flex-basis: 45%;
+    
 }
 .child_anasayfa img{
     border-radius: 5px;
-    border: #FFFFFF solid 2px;
+    
+    padding:1rem;
     
 }
 .child_anasayfa h1{
@@ -126,7 +130,7 @@ header{
 .innercv{
     
     align-items:center;
-    width: 40%;
+    width: 60%;
     justify-content: space-between;
     margin:0 auto;
     
@@ -139,7 +143,7 @@ header{
 .innercv_child{
     color: #FFFFFF;
     padding:25px 20px;
-    flex-basis:31% ;
+    flex-basis: 31% ;
     background:rgba(55,66,80,0.281) ;
     border-radius:5px ;
     margin :10px;
@@ -160,14 +164,7 @@ header{
     font-size: 15px;
 }
 
-/* *******İLETİŞİM******* */
-.inner_contact{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 40%;
-}
+/*miras şehir*/
 .slayt{
     
     
@@ -199,12 +196,18 @@ header{
 .icerik h4{
     color: #FFFFFF;
 }
-.ek{
+.ek iframe{
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    width: 90%;
+    margin: 10px auto;
+    justify-content:space-between;
+    width: 80%;
+    border-radius: 5px;
+    
+    
+    
 }
+
+
 .slayt2{
     margin: 0 auto;
     box-shadow: 0px 0px 17px -2px rgba(255, 255, 255, 0.55);
@@ -214,4 +217,129 @@ header{
 }
 
 
+/* *******İLETİŞİM******* */
+.inner_contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 auto;
+    width: 100%;
+}
+.child_contact{
+    flex-basis: 65%;
+    
+}
+.child_contact form{
+    padding: 50px 40px;
+    background: rgba(55,66,80,0.281);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .4s ease-in;
+
+}
+.child_contact form:hover{
+    border:1px solid #24CAAC;
+}
+.child_contact form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    transition: .3s ease-in;
+    background: #e7e7e7;
+}
+
+
+
+
+/*********GİRİS*************/
+
+
+.inner_giris{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 auto;
+    width: 100%;
+}
+.child_giris{
+    flex-basis: 65%;
+    
+}
+.child_giris form{
+    padding: 50px 40px;
+    background: rgba(55,66,80,0.281);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .4s ease-in;
+
+}
+.child_giris form:hover{
+    border:1px solid #24CAAC;
+}
+.child_giris form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    transition: .3s ease-in;
+    background: #e7e7e7;
+}
+
+/*****************/
+.burger{
+    display: none;
+    
+}
+.responsiveNav{
+    display: none;
+    position: fixed;
+    top:0 ;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color:#283138;
+}
+.responsiveNav a{
+    color: #e7e7e7;
+    
+
+}
+.openNav{
+    display: flex !important;
+    flex-direction: column;
+    padding: 3rem;
+    font-size:xx-large ;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+
+}
+.closeButton{
+    position: absolute; top: 20px; right: 20px; 
+    
+    
+    
+}
+
+
+@media(width<=1200px) {
+    .nav_links{
+        display: none;
+    }
+    .ek{
+        flex-direction: column;
+    }
+    .burger{
+        display: inline-block;
+        
+        
+    }
+    
+
+    
+}
 
