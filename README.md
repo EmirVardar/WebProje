@@ -21,7 +21,7 @@ Kendimi kısaca tanıttığım sayfadır.
 ### Özgeçmiş Sayfası
 CV olarak hazırladığım sayfadır. 
 
-### Şehrim Sayfas
+### Şehrim Sayfası
 Şehrimde belirli yerleri ve şehrimin özelliklerini tanıttığım sayfa.
 
 ### Mirasım Sayfası
@@ -33,10 +33,10 @@ Bu sayfada Hobilerimden bahsettim ve api kullanarak resimerini gösterdim.
 ### İletişim Sayfası
 Mesaj gönderebileceğiniz sayfadır.
 
-### İletişim Sayfası
+### Giriş Sayfası
 Giriş denetimin gerçekleştirdiğim sayfadır.
 ## e-mail:g211210071@sakarya.edu.tr
-## passord:g211210071
+## password:g211210071
 ## Screenshots
 
 
