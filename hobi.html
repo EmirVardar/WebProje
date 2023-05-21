@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css"><!--css -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet"><!--font-->
+    <title>Hobilerim</title>
+</head>
+<body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+            <h2><a href="#">Emir Vardar</a></h2>
+        </div>
+        <div onclick="showNavbar()" class="burger">
+            <svg viewBox="0 0 100 80" width="27" height="27" stroke="black" fill="white">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </div>
+        <ul class="nav_links">
+            <li><a href="index.html">Hakkımda</a></li>
+            <li><a href="cv.html">Öz Geçmiş</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="miras.html">Mirasımız</a></li>
+            <li><a href="hobi.html">Hobilerim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+        </ul>
+        <div id="show" class="responsiveNav">
+            <a href="index.html">Hakkımda</a>
+            <a href="cv.html">Öz Geçmiş</a>
+            <a href="sehrim.html">Şehrim</a>
+            <a href="miras.html">Mirasımız</a>
+            <a href="hobi.html">Hobilerim</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="login.html">Giriş Yap</a>
+        <span onclick="noneNavbar()" class="closeButton">
+            <svg width="40" height="40"viewPort="0 0 12 12" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="22" 
+                    x2="22" y2="1" 
+                    stroke="white" 
+                    stroke-width="2"/>
+                <line x1="1" y1="1" 
+                    x2="22" y2="22" 
+                    stroke="white" 
+                    stroke-width="2"/>
+            </svg>
+        </span>
+        </div>
+        <script>
+            const button=document.getElementsByClassName("burger")
+            
+            const showNavbar=()=>{document.getElementById("show").classList.add("openNav");
+
+            }
+            const noneNavbar=()=>{document.getElementById("show").classList.remove("openNav");}
+
+
+
+        </script>
+    </div>
+    </header>
+
+    <section >
+        <div class="section_title">
+            <h2>Hobilerim</h2>
+        </div>
+        <div class="icerik">
+            <h4>Film İzlemek</h4>
+            
+            <div class="paragraf">
+              <p>
+                Film izleyip ardından film ile ilgili yazılar yazmayı çok keyifli buluyorum.Diğer yazı yazanlar ile filmin konusu hakkında tartışmak da çok zevkli oluyor.çünkü herkes filmden kendi hayatına göre farklı çıkarımlar yapabiliyor.Fakat her film bu şekilde değil işte bahsettiğim türde olan filmlere örneklerim.
+              </p>
+              <div id="api" class="container"  style="display: flex;flex-wrap: wrap; justify-content: center;align-items: center; gap: 1rem;margin-bottom: 1rem;">
+
+
+              </div>
+            </div>
+
+            <h4>Resim Yapmak</h4>
+            <div class="paragraf">
+              <p>
+                Lisede hocalarım ile keşfettiğim yeteneğim vakit buldukça odama asmak için yağlı boya tablolar yapıyorum.Bir bakıma kendimi ifade etmek için kullandığım bir araç. şimdiye kadar 10 civarında tablo yaptım hepsini de odamda sergiliyorum. 
+              </p>
+            </div>
+            <h4>Hobi Bahçeciliği</h4>
+            <div class="paragraf">
+              <p>
+                Babamla birlikte yaptığımız bir hobidir.Dedemin çiftçi olmasından dolayı babamın vazgeçemediği bir hobidir.Dedem babama öğretmiş şimdi de babam bana.Pazar günleri birlikte gidip küçük bakçemizdeki ektiğimiz bitkileri düzenliyoruz.
+              </p>
+            </div>
+            <h4>Fotoğrafçılık</h4>
+            <div class="paragraf">
+              <p>
+                Bir dönem para için yaptıktan sonra gerçekten zevk aldığımı fark ettiğim bir hobidir.Hem çekim aşaması hem de edit aşaması gerçekten zevkli bir süreç.Şu anda da video kısmında çalışmaktayım.Video editleyip sosyal medyada paylaşıyorum.
+              </p>
+            </div>
+        </div>
+
+      
+        <script>
+          const imgURL="http://image.tmdb.org/t/p/w500/";
+          const film=document.getElementById("api");
+          fetch(
+              "https://api.themoviedb.org/3/list/8253710?api_key=60f7d74004b7c5e1124084bb611c3ebd&language=tr-Tr"
+                ).then(res=>res.json()).then(data=>{
+                  if (data){
+                    data.items.forEach(element => {
+                      film.insertAdjacentHTML("beforeend",`<div class="card" style="width: 18rem;">
+                          <img src=${imgURL+element.poster_path} class="card-img-top" alt="Resim">
+                          <div class="card-body">
+                          <h5 class="card-title">${element.original_title}</h5>
+                          <p class="text-dark">Yayın Tarihi : ${element.release_date}</p>
+      
+                          </div>
+                          </div>`)
+
+                      
+                    });
+                  }
+                })
+        </script>    
+            
+            
+            
+          
+    </section>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

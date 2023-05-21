@@ -1,3 +1,4 @@
+/* *******Genel******* */
 html{
     scroll-behavior: smooth;
     background-color: #122e44;
@@ -125,7 +126,7 @@ header{
 .btn a{
     color: #FFFFFF;
 }
-/* ***************CV******* */
+/* **********CV******* */
 
 .innercv{
     
@@ -164,7 +165,7 @@ header{
     font-size: 15px;
 }
 
-/*miras şehir*/
+/*******miras şehir*********/
 .slayt{
     
     
@@ -291,7 +292,7 @@ header{
     background: #e7e7e7;
 }
 
-/*****************/
+/*********responsive menu********/
 .burger{
     display: none;
     
@@ -340,6 +341,9 @@ header{
         display: inline-block;
         
         
+    }
+    .inner_anasayfa{
+        flex-direction: column;
     }
     
 

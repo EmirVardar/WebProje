@@ -11,60 +11,60 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="logo">
-                <h2><a href="#">Emir Vardar</a></h2>
-            </div>
-            <div onclick="showNavbar()" class="burger">
-              <svg viewBox="0 0 100 80" width="27" height="27" stroke="black" fill="white">
-                  <rect width="100" height="20"></rect>
-                  <rect y="30" width="100" height="20"></rect>
-                  <rect y="60" width="100" height="20"></rect>
-                </svg>
-          </div>
-            <ul class="nav_links">
-                <li><a href="/html/index.html">Hakkımda</a></li>
-                <li><a href="/html/cv.html">Öz Geçmiş</a></li>
-                <li><a href="/html/sehrim.html">Şehrim</a></li>
-                <li><a href="/html/miras.html">Mirasımız</a></li>
-                <li><a href="/html/hobi.html">Hobilerim</a></li>
-                <li><a href="/html/iletisim.html">İletişim</a></li>
-                <li><a href="/html/login.html">Giriş Yap</a></li>
-            </ul>
-            <div id="show" class="responsiveNav">
-              <a href="/html/index.html">Hakkımda</a>
-              <a href="/html/cv.html">Öz Geçmiş</a>
-              <a href="/html/sehrim.html">Şehrim</a>
-              <a href="/html/miras.html">Mirasımız</a>
-              <a href="/html/hobi.html">Hobilerim</a>
-              <a href="/html/iletisim.html">İletişim</a>
-              <a href="/html/login.html">Giriş Yap</a>
-          <span onclick="noneNavbar()" class="closeButton">
-              <svg width="40" height="40"viewPort="0 0 12 12" version="1.1"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <line x1="1" y1="22" 
-                      x2="22" y2="1" 
-                      stroke="white" 
-                      stroke-width="2"/>
-                  <line x1="1" y1="1" 
-                      x2="22" y2="22" 
-                      stroke="white" 
-                      stroke-width="2"/>
-              </svg>
-          </span>
-          </div>
-          <script>
-              const button=document.getElementsByClassName("burger")
-              
-              const showNavbar=()=>{document.getElementById("show").classList.add("openNav");
-
-              }
-              const noneNavbar=()=>{document.getElementById("show").classList.remove("openNav");}
-
-
-
-          </script>
+      <div class="navbar">
+        <div class="logo">
+            <h2><a href="#">Emir Vardar</a></h2>
         </div>
+        <div onclick="showNavbar()" class="burger">
+            <svg viewBox="0 0 100 80" width="27" height="27" stroke="black" fill="white">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </div>
+        <ul class="nav_links">
+            <li><a href="index.html">Hakkımda</a></li>
+            <li><a href="cv.html">Öz Geçmiş</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="miras.html">Mirasımız</a></li>
+            <li><a href="hobi.html">Hobilerim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+        </ul>
+        <div id="show" class="responsiveNav">
+            <a href="index.html">Hakkımda</a>
+            <a href="cv.html">Öz Geçmiş</a>
+            <a href="sehrim.html">Şehrim</a>
+            <a href="miras.html">Mirasımız</a>
+            <a href="hobi.html">Hobilerim</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="login.html">Giriş Yap</a>
+        <span onclick="noneNavbar()" class="closeButton">
+            <svg width="40" height="40"viewPort="0 0 12 12" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="22" 
+                    x2="22" y2="1" 
+                    stroke="white" 
+                    stroke-width="2"/>
+                <line x1="1" y1="1" 
+                    x2="22" y2="22" 
+                    stroke="white" 
+                    stroke-width="2"/>
+            </svg>
+        </span>
+        </div>
+        <script>
+            const button=document.getElementsByClassName("burger")
+            
+            const showNavbar=()=>{document.getElementById("show").classList.add("openNav");
+
+            }
+            const noneNavbar=()=>{document.getElementById("show").classList.remove("openNav");}
+
+
+
+        </script>
+    </div>
     </header>
 
     <section >
