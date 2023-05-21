@@ -40,36 +40,60 @@ Giriş denetimin gerçekleştirdiğim sayfadır.
 ## Screenshots
 
 
-![1]()
+![1](https://github.com/EmirVardar/WebProje/blob/main/ornek/1.png)
 
 ---
 
 
-![2]()
+![2](https://github.com/EmirVardar/WebProje/blob/main/ornek/2.png)
 
 ---
 
-![3]()
-
----
-
-
-![4]()
-
+![3](https://github.com/EmirVardar/WebProje/blob/main/ornek/3.png)
 
 ---
 
 
-![5]()
+![4](https://github.com/EmirVardar/WebProje/blob/main/ornek/4.png)
 
 
 ---
 
 
-![6]()
+![5](https://github.com/EmirVardar/WebProje/blob/main/ornek/5.png)
 
 
 ---
 
 
-![7]()
+![6](https://github.com/EmirVardar/WebProje/blob/main/ornek/6.png)
+
+
+---
+
+
+![7](https://github.com/EmirVardar/WebProje/blob/main/ornek/7.png)
+
+
+---
+
+
+![8](https://github.com/EmirVardar/WebProje/blob/main/ornek/8.png)
+
+
+---
+
+
+![9](https://github.com/EmirVardar/WebProje/blob/main/ornek/9.png)
+
+
+---
+
+
+![10](https://github.com/EmirVardar/WebProje/blob/main/ornek/10.png)
+
+
+---
+
+
+![11](https://github.com/EmirVardar/WebProje/blob/main/ornek/11.png)
