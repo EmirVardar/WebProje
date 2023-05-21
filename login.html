@@ -93,16 +93,16 @@
         const password=document.getElementById("password");
         function validateControl(){
             if(email.value==""){
-                alert("be olm");
+                alert("E-mail giriniz.");
                 return false;
             }
             if(password.value==""){
-                alert("be psolm");
+                alert("Şifre Giriniz.");
                 return false;
             }
             const Regex = /^\S+@\S+.\S+$/;
             if (!Regex.test(email.value)) {
-            alert("Geçerli bir email adresi giriniz");
+            alert("Geçerli bir email adresi giriniz.");
             return false;
   }
 
